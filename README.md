@@ -1,4 +1,4 @@
-### `npm test`
+### `Teste...`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Projeto publicado na URL abaixo.<br>
+[Clique Aqui](http://minhas-series-net-br.umbler.net) para acessar o projeto.
