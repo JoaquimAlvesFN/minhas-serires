@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import api from './Service';
+import axios from 'axios';
 import { Redirect } from 'react-router-dom';
 
 const EditarGenero = ({match}) => {
@@ -7,7 +7,7 @@ const EditarGenero = ({match}) => {
     const [success, setSuccess] = useState(false);
     
     useEffect(() => {
-        api
+        axios
         .get(`/api/genres/${match.params.id}`)
         .then(res => {
             setName(res.data.name);
@@ -19,7 +19,7 @@ const EditarGenero = ({match}) => {
     }
     
     const onSave = () => {
-        api.put(`/api/genres/${match.params.id}`, {
+        axios.put(`/api/genres/${match.params.id}`, {
             name
         }).then(res => {
            setSuccess(true);     
